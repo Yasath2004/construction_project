@@ -19,3 +19,29 @@ h2 {
 h3 {
     font-size: 2em;
 }
+
+p {
+    font-size: 1.2em;
+}
+
+header {
+    nav{
+        .nav-link {
+            text-transform: uppercase;
+            color:$text-color;
+            font-weight: 500;
+            margin-left: 20px;
+        }
+
+        .logo {
+            text-transform: uppercase;
+            font-size: 1em;
+            font-weight: 500;
+            span{
+                color: $primary-color;
+            }
+            
+        }
+    }
+
+}
