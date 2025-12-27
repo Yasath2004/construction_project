@@ -68,17 +68,30 @@ import aboutImg from '../../assets/images/about-us.jpg';
         <div className='row'>
 
         <div className='col-md-3'>
-          <h2>urbanEdge</h2>
+          <h3>urbanEdge</h3>
           <p>© 2024 UrbanEdge Construction. All rights reserved.</p>
         </div>
 
         <div className='col-md-3'>
+          <h2>Services</h2>
+          <p>Construction</p>
+          <p>Renovation</p>
+          <p>Project Management</p>
+          <p>Consultation</p>
         </div>
 
         <div className='col-md-3'>
+          <h2>Contact Us</h2>
+          <p>Email: info@urbanedgeconstruction.com</p>
+          <p>Phone: +1 (555) 123-4567</p> 
         </div>
 
         <div className='col-md-3'>
+          <h2>Follow Us</h2>
+          <p>Facebook</p>
+          <p>Twitter</p>
+          <p>Instagram</p>
+          <p>LinkedIn</p>
         </div>
 
 
