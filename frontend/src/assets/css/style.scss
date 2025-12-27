@@ -2,6 +2,7 @@ $primary-color: #fe538d;
 $secondary-color: #FFB703;
 $text-color: #000000;
 $text-white: #ffffff;
+$dark-bg: #121212;
 
 @import url('https://fonts.googleapis.com/css2?family=Germania+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -82,6 +83,12 @@ header {
 
 }
 
+footer {
+    background-color: $dark-bg;
+    color: $text-white;
+ 
+}
+
 .section-1{
     .hero{
         background: linear-gradient(to right, rgba(0,0,0,8), rgba(0,0,0,0.0)), url('../images/hero.jpg');
@@ -99,6 +106,25 @@ header {
     }
 
 .section-2{
+    img{
+        border-radius: 40px;
+        height: 110%;
+
+    }
+    span{
+        color: $primary-color;
+        font-size: 1em;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+        font-weight: 500;
+    }
+
+    p{
+        font-size: 1em;
+        color: darken($text-color, 20%);
+        line-height: 1.8em;
+        margin-top: 20px;
+    }
 
     
 }
