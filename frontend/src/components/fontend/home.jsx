@@ -111,6 +111,7 @@ import aboutImg from '../../assets/images/about-us.jpg';
         <hr/>
         <div className='text-center pt-3'>
           <p>Designed by ceygenic</p>
+          </div>
 
        </div>
     </div>
