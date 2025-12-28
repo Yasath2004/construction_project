@@ -64,37 +64,50 @@ import aboutImg from '../../assets/images/about-us.jpg';
       </section>
     </main>
     <footer>
-      <div className='container'>
+      <div className='container py-5'>
         <div className='row'>
-
         <div className='col-md-3'>
           <h3>urbanEdge</h3>
-          <p>© 2024 UrbanEdge Construction. All rights reserved.</p>
+          <ul>
+          <li>
+            <a href="">© 2024 UrbanEdge Construction. All rights reserved.</a>
+          </li>  
+          </ul>
         </div>
 
         <div className='col-md-3'>
-          <h2>Services</h2>
-          <p>Construction</p>
-          <p>Renovation</p>
-          <p>Project Management</p>
-          <p>Consultation</p>
+          <h3>Services</h3>
+          <ul>
+          <li>
+            <a href="">Construction</a></li>
+          <li>
+            <a href="">Renovation</a></li>
+          <li>
+            <a href="">Project Management</a></li>
+          <li>
+            <a href="">Consultation</a></li>
+          </ul>
         </div>
 
         <div className='col-md-3'>
-          <h2>Contact Us</h2>
-          <p>Email: info@urbanedgeconstruction.com</p>
-          <p>Phone: +1 (555) 123-4567</p> 
+          <h3>Contact Us</h3>
+          <ul>
+          <li><a href="">123 Main Street, Cityville, ST 12345</a></li>
+          <li><a href="">Suite 100</a></li>
+          <li><a className='email' href="">info@urbanedgeconstruction.com</a></li>
+          <li><a className='email' href="">Phone: +1 (555) 123-4567</a></li>
+          </ul>
         </div>
 
         <div className='col-md-3'>
-          <h2>Follow Us</h2>
-          <p>Facebook</p>
-          <p>Twitter</p>
-          <p>Instagram</p>
-          <p>LinkedIn</p>
+          <h3>Follow Us</h3>
+          <ul>
+          <li><a href="">Facebook</a></li>
+          <li><a href="">Twitter</a></li>
+          <li><a href="">Instagram</a></li>
+          <li><a href="">LinkedIn</a></li>
+          </ul>
         </div>
-
-
        </div>
     </div>
     </footer>

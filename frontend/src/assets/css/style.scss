@@ -26,6 +26,14 @@ p {
     font-size: 1.2em;
 }
 
+ul {
+    margin-left: 0;
+    padding-left: 0;
+    li{
+        list-style: none;
+        margin-left: 0;
+    }
+}
     .btn-primary{
         background-color: $primary-color;
         border:1px solid $primary-color;
@@ -86,6 +94,27 @@ header {
 footer {
     background-color: $dark-bg;
     color: $text-white;
+    h3{
+        font-size: 1.5em;
+        color: $secondary-color;
+    }
+
+     ul{
+        li{
+            margin-bottom: 5px,0;
+            .email{
+                color:$text-white;
+                font-size: 1rem;
+            }
+        }
+     }
+
+    a{
+        color:$text-white;
+        font-size: 1.2em;
+        text-decoration: none;
+
+    }
  
 }
 
