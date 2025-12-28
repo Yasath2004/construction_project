@@ -108,6 +108,10 @@ import aboutImg from '../../assets/images/about-us.jpg';
           <li><a href="">LinkedIn</a></li>
           </ul>
         </div>
+        <hr/>
+        <div className='text-center pt-3'>
+          <p>Designed by ceygenic</p>
+
        </div>
     </div>
     </footer>
