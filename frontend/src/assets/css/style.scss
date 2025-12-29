@@ -150,7 +150,7 @@ footer {
 
     p{
         font-size: 1em;
-        color: darken($text-color, 20%);
+        color: $text-color;
         line-height: 1.8em;
         margin-top: 20px;
     }
