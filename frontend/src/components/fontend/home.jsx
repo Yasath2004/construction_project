@@ -44,6 +44,12 @@ import Footer from '../common/footer.jsx';
           </div> 
         </div>
       </section>
+
+      {/* our Services*/}
+            <section className='section-3 '>
+              
+
+            </section>
     </main>
     <Footer/>
     </>
