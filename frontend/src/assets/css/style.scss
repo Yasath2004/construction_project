@@ -3,6 +3,7 @@ $secondary-color: #FFB703;
 $text-color: #000000;
 $text-white: #ffffff;
 $dark-bg: #121212;
+$light-bg: #9e9b9b;
 
 @import url('https://fonts.googleapis.com/css2?family=Germania+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -34,6 +35,11 @@ ul {
         margin-left: 0;
     }
 }
+
+.bg-light{
+    background-color: $light-bg;
+}
+
     .btn-primary{
         background-color: $primary-color;
         border:1px solid $primary-color;
@@ -68,6 +74,17 @@ ul {
 
         }
     }
+
+.section-header{
+    span{
+        color: $primary-color;
+        font-size: 1.2em;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+        font-weight: 500;
+        display: block;
+    }
+}    
 
 header {
     nav{
@@ -158,7 +175,45 @@ footer {
     
 }
 
-.section.section-3{
+.section-3{
+    .item{
+        position: relative;
+        overflow: hidden;
 
+        & :hover{
+            .service-body{
+                transform: translateY(0%);
+                
+                .service-content{
+                    opacity: 1;
+                }
+            }
+        }
+        .service-image{
+        position: relative;
+        overflow: hidden;  
+        img{
+            width: 100%;
+            border-radius: 40px;
+            aspect-ratio: 1/1.2;
+            object-fit: cover;    
+        }
+        .service-body{
+            color:$text-white;
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            right: 30px;
+            transform: translateY(80%);
+            transition: all 0.4s ease-in-out;
+
+            .service-content{
+                transition: all 0.4s ease-in-out;
+                opacity: 0;
+            }
+
+            
+        }
+    }
+ }
 }
-
