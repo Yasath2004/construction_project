@@ -180,10 +180,10 @@ footer {
         position: relative;
         overflow: hidden;
 
-        & :hover{
+        &:hover{
             .service-body{
                 transform: translateY(0%);
-                
+
                 .service-content{
                     opacity: 1;
                 }
@@ -198,6 +198,18 @@ footer {
             aspect-ratio: 1/1.2;
             object-fit: cover;    
         }
+           &:after   {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            border-radius: 40px;
+            background: linear-gradient(180deg,rgba(217,217,217,0)0% ,180deg,rgba(217,217,217,13.02% )
+            rgba(0,0,0,0.51) 42.5%, rgba(0,0,0,0.63) 70%), #000000 100%;
+           }
+           
         .service-body{
             color:$text-white;
             position: absolute;
