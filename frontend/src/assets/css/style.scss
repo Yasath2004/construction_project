@@ -20,7 +20,7 @@ h2 {
 }
 
 h3 {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 p {
@@ -179,6 +179,7 @@ footer {
     .item{
         position: relative;
         overflow: hidden;
+        margin-bottom: 20px;
 
         &:hover{
             .service-body{
@@ -228,4 +229,34 @@ footer {
         }
     }
  }
+}
+
+.section-4{
+    .card{
+        border-radius: 20px;
+        text-align: center;
+        padding: 30px 20px;
+        margin-bottom: 20px;
+
+        .card-icon{
+            img{
+                width: 60px;
+            }
+        }
+
+        .card-title{
+            h3{
+                font-size: 1.5em;
+                margin-top: 15px;
+                text-transform: uppercase;
+            }
+
+            p{
+                font-size: 1em;
+                color: $text-color;
+                margin-top: 10px;
+                line-height: 1.6em;
+            }
+        }
+    }
 }
