@@ -275,7 +275,10 @@ footer {
 }
 .section-5{
     .swiper{
-     padding: 25px;
+     padding: 25px 25px 50px 25px;
+     .swiper-pagination-bullet-active   {
+        background-color: $secondary-color;
+     }
 
     }
     .card{
@@ -286,20 +289,22 @@ footer {
           
         }
         .content{
+
             p{
                 font-size: 1em;
                 color: $text-color;
                 line-height: 1.6em;
         }
-        .meta{
-            img{
-                border-radius: 50%;
-            }
+        
         }
         .name{
             font-size: 1.3em;
             font-weight: 500;
         }
+        .meta{
+            img{
+                border-radius: 50%;
+            }
     }
 
         }
