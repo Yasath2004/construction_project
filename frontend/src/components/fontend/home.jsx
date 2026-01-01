@@ -325,9 +325,6 @@ import avatarimg from '../../assets/images/author-2.jpg';
                           </div>
                         </div>
                       </SwiperSlide>
-                      <SwiperSlide>Slide 2</SwiperSlide>
-                      <SwiperSlide>Slide 3</SwiperSlide>
-                      <SwiperSlide>Slide 4</SwiperSlide>
                       ...
                                 </Swiper>
               </div>
