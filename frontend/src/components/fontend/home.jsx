@@ -19,6 +19,8 @@ import construction1img from '../../assets/images/construction6.jpg';
 import construction2img from '../../assets/images/construction7.jpg';
 import construction3img from '../../assets/images/construction8.jpg';
 
+import blogimg from '../../assets/images/construction8.jpg';
+
 import Icon1 from '../../assets/images/icon-1.svg';
 import Icon2 from '../../assets/images/icon-2.svg';
 import Icon3 from '../../assets/images/icon-3.svg';
@@ -39,8 +41,8 @@ import avatarimg from '../../assets/images/author-2.jpg';
                         <h1>crafting with<br/>percision and excellence</h1>
                         <p>Building dreams, one brick at a time. <br/>Your vision, our expertise.</p>
                         <div className='mt-4'>
-                        <a className='btn btn-primary'>contact now</a>
-                        <a className='btn btn-secondary ms-2'>view projects</a>
+                        <a className='btn btn-primary large'>contact now</a>
+                        <a className='btn btn-secondary ms-2 large'>view projects</a>
                         </div>
                       </div>  
                     </div>
@@ -439,7 +441,63 @@ import avatarimg from '../../assets/images/author-2.jpg';
                       ...
                                 </Swiper>
               </div>
+            </section>
+            <section className='section-6 bg-light py-5'>
+              <div className='container'>
+                <div className='section-header text-center mb-5'>
+                  <span>blog and news</span>
+                  <h2>articles and blog post</h2>
+                  <p>we offer a diverse of array of construction services. spanning residential,commercial and industrial projects.</p>
+                  </div>
+                  <div className='row'>
+                    <div className='col-md-4'>
+                      <div className='card border-0 shadow'>
+                        <div className='card-img-top'>
+                          <img src={blogimg} alt="" className='w-100' />
+                        </div>
+                        <div className='card-body p-4 '>
+                          <div className='mb-3'>
+                            <a href='#' className='title'>Dummy blog title</a>
+                          </div>
+                          <a href='#' className='btn btn-primary small'>read more</a>
 
+                        </div>
+
+                      </div>
+                      </div>
+                       <div className='col-md-4'>
+                      <div className='card border-0 shadow'>
+                        <div className='card-img-top'>
+                          <img src={blogimg} alt="" className='w-100' />
+                        </div>
+                        <div className='card-body p-4 '>
+                          <div className='mb-3'>
+                            <a href='#' className='title'>Dummy blog title</a>
+                          </div>
+                          <a href='#' className='btn btn-primary small'>read more</a>
+
+                        </div>
+
+                      </div>
+                      </div>
+                       <div className='col-md-4'>
+                      <div className='card border-0 shadow'>
+                        <div className='card-img-top'>
+                          <img src={blogimg} alt="" className='w-100' />
+                        </div>
+                        <div className='card-body p-4 '>
+                          <div className='mb-3'>
+                            <a href='#' className='title'>Dummy blog title</a>
+                          </div>
+                          <a href='#' className='btn btn-primary small'>read more</a>
+
+                        </div>
+
+                      </div>
+                      </div>
+                  </div>
+              </div>
+              
             </section>
     </main>
     <Footer/>
