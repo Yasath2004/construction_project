@@ -21,6 +21,19 @@ const About = () => {
             </section>
             
             <AboutNEW />
+
+            {/* our team */}
+            <section className="section-8">
+              <div className="container">
+              <div className='section-header text-center mb-5'>
+                  <span>team</span>
+                  <h2>our professional team</h2>
+                  <p>We are a team of experienced professionals dedicated to delivering high-quality construction services tailored to your specific needs.</p>
+                  
+                  </div>
+                </div>
+
+            </section>
         </main>
         <Footer />
     </>

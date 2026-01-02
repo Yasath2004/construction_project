@@ -426,6 +426,9 @@ import avatarimg from '../../assets/images/author-2.jpg';
                                 </Swiper>
               </div>
             </section>
+            
+            {/* blog section */}
+
             <section className='section-6 bg-light py-5'>
               <div className='container'>
                 <div className='section-header text-center mb-5'>
