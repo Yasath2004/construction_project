@@ -14,11 +14,11 @@ export default function Header() {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ms-auto">
                 <Nav.Link href="#home" className='nav-link'>Home</Nav.Link>
-                <Nav.Link href="#link" className='nav-link'>about us</Nav.Link>
-                <Nav.Link href="#link" className='nav-link'>services</Nav.Link>
-                <Nav.Link href="#link" className='nav-link'>projects</Nav.Link>
-                <Nav.Link href="#link" className='nav-link'>blog</Nav.Link>
-                <Nav.Link href="#link" className='nav-link'>contact us</Nav.Link>
+                <Nav.Link href="#About" className='nav-link'>about us</Nav.Link>
+                <Nav.Link href="#services" className='nav-link'>services</Nav.Link>
+                <Nav.Link href="#projects" className='nav-link'>projects</Nav.Link>
+                <Nav.Link href="#blog" className='nav-link'>blog</Nav.Link>
+                <Nav.Link href="#contact" className='nav-link'>contact us</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
