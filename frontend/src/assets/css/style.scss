@@ -369,3 +369,42 @@ footer {
     }
  
 }
+
+.section-8 {
+    margin: auto;
+    padding: 60px;
+
+    .card {
+        border-radius: 40px;
+        overflow: hidden;
+        background: #fff;
+
+        .card-img-top {
+            img {
+                width: 100%;
+                height: 100%;   
+                border-top-left-radius: 40px;
+                border-top-right-radius: 40px;
+                display: block;
+                height: 320px; 
+                object-fit: cover;
+            }
+        }
+
+        .card-body {
+            .card-title {
+                font-size: 1.5em;
+                font-weight: 600;
+                color: #333;
+            }
+            .card-sub-title {
+                font-size: 1.2em;
+                font-weight: 400;
+                color: #777; 
+                margin-bottom: 10px;
+            }
+            
+
+        }
+    }
+}
