@@ -7,6 +7,10 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Home  from './components/fontend/home.jsx';
 import About from './components/fontend/About.jsx';
 import Services from './components/fontend/services.jsx';
+import Projects from './components/fontend/projects.jsx';
+import Blogs from './components/fontend/Blogs.jsx';
+import ContactUs from './components/fontend/ContactUs.jsx';
+
 
 import './assets/css/style.scss';
 
@@ -19,6 +23,9 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/services' element={<Services />} />
+        <Route path='/projects' element={<Projects />} />
+        <Route path='/blogs' element={<Blogs />} />
+        <Route path='/contact' element={<ContactUs />} />
       </Routes>
      </BrowserRouter>
 
