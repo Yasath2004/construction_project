@@ -7,12 +7,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::post('/authenticate', [AuthenticationController::class, 'authenticate']);
 
+
+
+
 // Route::get('/user', function (Request $request) {
 //     return $request->user();
 // })->middleware('auth:sanctum');
 
-Route::group(['middleware'=>['auth:sanctum']],function()
-{
-    // Routes protected by auth:sanctum middleware
-    Route::post('dashboard', [DashboardController::class, 'index']);
+
+Route::group(['middleware'=>['auth:sanctum']], function() {
+    Route::get('dashboard', [DashboardController::class, 'index']);
+    Route::get('/logout', [AuthenticationController::class, 'logout']); 
 });
