@@ -11,7 +11,15 @@ const Login = () => {
     formState: { errors },
   } = useForm()
 
-  const onSubmit = (data) => {console.log(data)}
+  const onSubmit = (data) => {
+    const res = fetch("http://localhost:8000/api/authenticate", {
+      method: 'POST',
+      headers: {
+        'Content-type' : 'application/json'
+      }
+    })
+  }
+  }
   return (
  <>
  <Header/>
@@ -40,7 +48,8 @@ const Login = () => {
                                     <label htmlFor=''className='form-label'>Password</label>
                                     <input
                                         {...register('password',{
-                                            required: "this field is requird"
+                                            required: "this field is requird",
+                                           
                                         })}
                                     
                                     type='Password' placeholder='Password' 
