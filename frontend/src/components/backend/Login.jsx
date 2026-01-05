@@ -2,6 +2,8 @@ import React from 'react'
 import Header from '../common/header'
 import Footer from '../common/footer'
 import { useForm } from "react-hook-form"
+import { toast } from 'react-toastify'
+
 
 const Login = () => {
      const {
@@ -11,14 +13,20 @@ const Login = () => {
     formState: { errors },
   } = useForm()
 
-  const onSubmit = (data) => {
-    const res = fetch("http://localhost:8000/api/authenticate", {
+  const onSubmit = async(data) => {
+    const res =await fetch("http://localhost:8000/api/authenticate", {
       method: 'POST',
       headers: {
         'Content-type' : 'application/json'
-      }
-    })
-  }
+      },
+      body: JSON.stringify(data)
+    });
+    const result= await res.json();
+    if(result.status== false){
+        toast(result.message)
+    }
+
+   // console.log(result);
   }
   return (
  <>
@@ -38,7 +46,7 @@ const Login = () => {
                                             required: "this field is requird"
                                         })}
                                      type='text' placeholder='Email' 
-                                     className={`form-control ${errors.email && 'is-invalide'}`}/>
+                                     className={`form-control ${errors.email && 'is-invalid'}`}/>
                                     {
                                         errors.email&&<p className='invalid-feedback'>{errors.email?.message} </p>
                                     }
@@ -52,8 +60,8 @@ const Login = () => {
                                            
                                         })}
                                     
-                                    type='Password' placeholder='Password' 
-                                    className={`form-control ${errors.email && 'is-invalide'}`}/>
+                                    type='password' placeholder='Password' 
+                                    className={`form-control ${errors.password && 'is-invalid'}`}/>
                                     {
                                         errors.password&&<p className='invalid-feedback'>{errors.password?.message} </p>
                                     }

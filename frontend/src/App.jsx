@@ -12,6 +12,9 @@ import Blogs from './components/fontend/Blogs.jsx';
 import ContactUs from './components/fontend/ContactUs.jsx';
 import Login from './components/backend/Login.jsx';
 
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+
 
 import './assets/css/style.scss';
 
