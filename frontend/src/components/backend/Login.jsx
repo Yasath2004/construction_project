@@ -24,6 +24,9 @@ const Login = () => {
     const result= await res.json();
     if(result.status== false){
         toast(result.message)
+    } 
+    else if(result.status== true){
+        toast(result.message)
     }
 
    // console.log(result);
