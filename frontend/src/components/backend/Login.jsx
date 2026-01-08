@@ -3,9 +3,13 @@ import Header from '../common/header'
 import Footer from '../common/footer'
 import { useForm } from "react-hook-form"
 import { toast } from 'react-toastify'
+import { useNavigate } from 'react-router-dom'
 
 
 const Login = () => {
+
+    const navigate = useNavigate();
+
      const {
     register,
     handleSubmit,
@@ -25,8 +29,15 @@ const Login = () => {
     if(result.status== false){
         toast(result.message)
     } 
-    else if(result.status== true){
-        toast(result.message)
+    else {
+        const userInfo ={
+            id:result . id,
+            token:result .token
+        }
+        localStorage.setItem('userInfo',JSON.stringify(userInfo))
+
+
+        navigate('/admin/dashboard')
     }
 
    // console.log(result);
