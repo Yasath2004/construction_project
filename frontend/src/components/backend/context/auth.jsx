@@ -14,14 +14,14 @@ export const authprovider = ({children})=>{
         setuser(null)
 
     }
-    
+
     return{
-        <AuthContext.Provider={{
+        <authContext.Provider value={{
             user,
             login,
             logout
         }}>
-        </AuthContext.Provider>
+        </authContext.Provider>
     }
 
 }
